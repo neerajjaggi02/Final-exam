@@ -3,92 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grade III English Practice Paper - Self Check</title>
+    <title>Grade III English Comprehensive Practice Paper</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f4f7f6; }
-        .paper-container { background-color: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-top: 10px solid #2c3e50; }
-        h1, h2 { text-align: center; color: #2c3e50; }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; max-width: 850px; margin: 0 auto; padding: 20px; background-color: #f0f2f5; }
+        .paper-container { background-color: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border-top: 10px solid #2c3e50; }
+        h1, h2 { text-align: center; color: #2c3e50; margin-bottom: 5px; }
         .header-info { display: flex; justify-content: space-between; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px; font-weight: bold; }
-        .section-title { background-color: #ecf0f1; padding: 10px; border-left: 5px solid #2980b9; margin: 20px 0 15px; }
-        .question { margin-bottom: 15px; }
+        .section-title { background-color: #e8eff5; padding: 10px; border-left: 5px solid #2980b9; margin: 25px 0 15px; font-weight: bold; }
+        .question { margin-bottom: 20px; padding-left: 10px; }
         .marks { float: right; font-weight: bold; color: #7f8c8d; }
-        input[type="text"] { border: none; border-bottom: 1px solid #999; width: 220px; padding: 5px; font-size: 1rem; }
-        .ans-key { display: none; color: #27ae60; font-weight: bold; margin-left: 10px; font-style: italic; }
-        .btn-container { text-align: center; margin-top: 30px; }
-        button { padding: 10px 25px; font-size: 1rem; cursor: pointer; border-radius: 5px; border: none; transition: 0.3s; }
-        .check-btn { background-color: #2980b9; color: white; }
-        .check-btn:hover { background-color: #3498db; }
-        .print-btn { background-color: #95a5a6; color: white; margin-left: 10px; }
-        @media print { .btn-container, .ans-key { display: none !important; } }
+        input[type="text"] { border: none; border-bottom: 1px solid #999; width: 200px; padding: 5px; font-size: 1rem; background: transparent; }
+        input[type="text"]:focus { outline: none; border-bottom: 2px solid #2980b9; }
+        .ans-key { display: none; color: #27ae60; font-weight: bold; margin-left: 10px; font-size: 0.95rem; }
+        .btn-container { text-align: center; margin-top: 40px; position: sticky; bottom: 20px; }
+        button { padding: 12px 30px; font-size: 1.1rem; cursor: pointer; border-radius: 50px; border: none; transition: 0.3s; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .check-btn { background-color: #27ae60; color: white; }
+        .check-btn:hover { background-color: #2ecc71; transform: translateY(-2px); }
+        .print-btn { background-color: #34495e; color: white; margin-left: 15px; }
+        .instruction { font-style: italic; color: #7f8c8d; margin-bottom: 10px; display: block; }
+        @media print { .btn-container, .ans-key, .instruction { display: none !important; } }
     </style>
 </head>
 <body>
 
 <div class="paper-container">
-    <h1>PRACTICE EXAMINATION</h1>
-    <h2>Grade III English (2025-26)</h2>
+    <h1>SECOND SEMESTER EXAMINATION</h1>
+    <h2>Grade III English Language & Literature</h2>
 
     <div class="header-info">
-        <span>Time: 1 Hour</span>
-        <span>Total Marks: 30</span>
+        <span>Time: 1 Hour [cite: 23]</span>
+        <span>Total Marks: 30 [cite: 19]</span>
     </div>
 
     <section>
-        <div class="section-title"><h3>SECTION A: LITERATURE</h3></div>
+        <div class="section-title">SECTION A: LITERATURE (The Wizard of Oz & Three Wise Old Women)</div>
+        
         <div class="question">
-            <strong>Q1. Give the meanings:</strong>
-            <p>1. Dismal: <input type="text"> <span class="ans-key">Ans: Gloomy / Sad</span></p>
-            <p>2. Gingham: <input type="text"> <span class="ans-key">Ans: Checkered cotton fabric</span></p>
+            <strong>Q1. Fill in the blanks from the text:</strong>
+            <p>1. Dorothy lived in the midst of the great Kansas ________. <input type="text"> <span class="ans-key">Ans: prairies</span></p>
+            <p>2. The Scarecrow was stuffed with ________. <input type="text"> <span class="ans-key">Ans: straw</span></p>
+            <p>3. The Three Wise Old Women went for a walk on a ________ day. <input type="text"> <span class="ans-key">Ans: winter's</span></p>
+        </div>
+
+        <div class="question">
+            <strong>Q2. Short Answer Review (Type your answer):</strong>
+            <p>Why did the Tin Woodman want a heart? <br>
+            <input type="text" style="width:90%;"> <span class="ans-key">Ans: So he could love and be happy.</span></p>
+            <p>Where did the three women get stuck in the poem? <br>
+            <input type="text" style="width:90%;"> <span class="ans-key">Ans: In a tall tree / on a ladder.</span></p>
         </div>
     </section>
 
     <section>
-        <div class="section-title"><h3>SECTION B: LANGUAGE</h3></div>
+        <div class="section-title">SECTION B: LANGUAGE (Grammar)</div>
         
         <div class="question">
-            <strong>Q2. Tenses (Past/Present/Future):</strong>
-            <p>1. Yesterday, Dorothy _______ (walk) to the woods. <input type="text"> <span class="ans-key">Ans: walked</span></p>
-            <p>2. The Wizard _______ (live) in Oz now. <input type="text"> <span class="ans-key">Ans: lives</span></p>
+            <strong>Q3. Subject and Predicate:</strong>
+            <span class="instruction">Identify the underlined part:</span>
+            <p>1. <u>The little girl</u> laughed. <input type="text"> <span class="ans-key">Ans: Subject</span></p>
+            <p>2. The Wizard <u>gave them gifts</u>. <input type="text"> <span class="ans-key">Ans: Predicate</span></p>
+            <p>3. <u>Toto</u> barked loudly. <input type="text"> <span class="ans-key">Ans: Subject</span></p>
         </div>
 
         <div class="question">
-            <strong>Q3. Adverbs (Identify the Kind):</strong>
-            <p>1. The women walked <u>slowly</u>. <input type="text"> <span class="ans-key">Ans: Manner</span></p>
-            <p>2. I will go <u>tomorrow</u>. <input type="text"> <span class="ans-key">Ans: Time</span></p>
+            <strong>Q4. Verbs and Tenses:</strong>
+            <p>1. She _______ (see) a cyclone yesterday. <input type="text"> <span class="ans-key">Ans: saw</span></p>
+            <p>2. They _______ (be) happy today. <input type="text"> <span class="ans-key">Ans: are</span></p>
+            <p>3. I _______ (visit) my aunt tomorrow. <input type="text"> <span class="ans-key">Ans: will visit</span></p>
         </div>
 
         <div class="question">
-            <strong>Q4. Prepositions:</strong>
-            <p>1. The dog sat _______ the table. <input type="text"> <span class="ans-key">Ans: under / on / near</span></p>
-            <p>2. Toto jumped _______ the basket. <input type="text"> <span class="ans-key">Ans: into / in</span></p>
+            <strong>Q5. Adverbs (Identify kind: Manner/Time/Place):</strong>
+            <p>1. The lion roared <b>fiercely</b>. <input type="text"> <span class="ans-key">Ans: Manner</span></p>
+            <p>2. Put the basket <b>there</b>. <input type="text"> <span class="ans-key">Ans: Place</span></p>
+            <p>3. We should leave <b>early</b>. <input type="text"> <span class="ans-key">Ans: Time</span></p>
         </div>
 
         <div class="question">
-            <strong>Q5. Conjunctions (and, but, because, or):</strong>
-            <p>1. He was tired _______ he kept walking. <input type="text"> <span class="ans-key">Ans: but</span></p>
-            <p>2. She cried _______ she lost her way. <input type="text"> <span class="ans-key">Ans: because</span></p>
+            <strong>Q6. Prepositions:</strong> [cite: 31]
+            <p>1. The letter was sent _______ John. <input type="text"> <span class="ans-key">Ans: to [cite: 32, 34]</span></p>
+            <p>2. There are stars _______ the sky. <input type="text"> <span class="ans-key">Ans: in [cite: 33, 35]</span></p>
+            <p>3. The monkey climbed _______ the tree. <input type="text"> <span class="ans-key">Ans: up</span></p>
+        </div>
+
+        <div class="question">
+            <strong>Q7. Conjunctions (Join the sentences):</strong> [cite: 127]
+            <p>1. I took a nap. I was tired. <br>
+            <input type="text" style="width:90%;"> <span class="ans-key">Ans: I took a nap because I was tired. [cite: 128]</span></p>
+            <p>2. The phone was expensive. I did not buy it. <br>
+            <input type="text" style="width:90%;"> <span class="ans-key">Ans: The phone was expensive, so I did not buy it. [cite: 79, 80]</span></p>
+        </div>
+
+        <div class="question">
+            <strong>Q8. Prefixes and Suffixes:</strong> [cite: 100]
+            <p>1. The teacher asked us to _______ (write) the story. <input type="text"> <span class="ans-key">Ans: rewrite [cite: 102, 105, 114]</span></p>
+            <p>2. He made a care_______ mistake. <input type="text"> <span class="ans-key">Ans: careless [cite: 103, 106, 113]</span></p>
+            <p>3. The lion was help_______. <input type="text"> <span class="ans-key">Ans: helpless [cite: 111, 113]</span></p>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-title">SECTION C: GUIDED WRITING</div>
+        <div class="question">
+            <strong>Q9. Picture Composition (8-10 sentences):</strong> [cite: 162]
+            <p>Topic: My Favourite Toy OR A Visit to a Park [cite: 132, 170]</p>
+            <textarea style="width: 100%; height: 150px; border: 1px solid #ccc; padding: 10px;" placeholder="Start writing here..."></textarea>
+            <span class="ans-key" style="display:block; margin-top:10px;">Review Guidelines: Did you use 8-10 sentences? Did you use capital letters and full stops? [cite: 162]</span>
         </div>
     </section>
 
     <div class="btn-container">
-        <button class="check-btn" onclick="showAnswers()">Check My Answers</button>
+        <button class="check-btn" onclick="toggleAnswers()">Review Answers</button>
         <button class="print-btn" onclick="window.print()">Print Paper</button>
     </div>
 
-    <div style="text-align: center; margin-top: 20px; color: #95a5a6; font-size: 0.8rem;">
-        Note: Descriptive answers (sentences) should be checked by a parent!
+    <div style="text-align: center; margin-top: 30px; font-size: 0.9rem; color: #666;">
+        © 2026 Practice Portal | Hard work & Discipline are our tradition [cite: 3]
     </div>
 </div>
 
 <script>
-    function showAnswers() {
+    function toggleAnswers() {
         const answers = document.querySelectorAll('.ans-key');
+        const btn = document.querySelector('.check-btn');
+        const isHidden = answers[0].style.display === 'none' || answers[0].style.display === '';
+        
         answers.forEach(ans => {
-            ans.style.display = (ans.style.display === 'inline') ? 'none' : 'inline';
+            ans.style.display = isHidden ? 'inline' : 'none';
         });
         
-        const btn = document.querySelector('.check-btn');
-        btn.innerHTML = (btn.innerHTML === 'Check My Answers') ? 'Hide Answers' : 'Check My Answers';
+        btn.innerHTML = isHidden ? 'Hide Answers' : 'Review Answers';
+        btn.style.backgroundColor = isHidden ? '#e67e22' : '#27ae60';
     }
 </script>
 
