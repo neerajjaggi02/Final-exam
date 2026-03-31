@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade III English Practice Paper - Self Check</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f4f7f6; }
+        .paper-container { background-color: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-top: 10px solid #2c3e50; }
+        h1, h2 { text-align: center; color: #2c3e50; }
+        .header-info { display: flex; justify-content: space-between; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px; font-weight: bold; }
+        .section-title { background-color: #ecf0f1; padding: 10px; border-left: 5px solid #2980b9; margin: 20px 0 15px; }
+        .question { margin-bottom: 15px; }
+        .marks { float: right; font-weight: bold; color: #7f8c8d; }
+        input[type="text"] { border: none; border-bottom: 1px solid #999; width: 220px; padding: 5px; font-size: 1rem; }
+        .ans-key { display: none; color: #27ae60; font-weight: bold; margin-left: 10px; font-style: italic; }
+        .btn-container { text-align: center; margin-top: 30px; }
+        button { padding: 10px 25px; font-size: 1rem; cursor: pointer; border-radius: 5px; border: none; transition: 0.3s; }
+        .check-btn { background-color: #2980b9; color: white; }
+        .check-btn:hover { background-color: #3498db; }
+        .print-btn { background-color: #95a5a6; color: white; margin-left: 10px; }
+        @media print { .btn-container, .ans-key { display: none !important; } }
+    </style>
+</head>
+<body>
+
+<div class="paper-container">
+    <h1>PRACTICE EXAMINATION</h1>
+    <h2>Grade III English (2025-26)</h2>
+
+    <div class="header-info">
+        <span>Time: 1 Hour</span>
+        <span>Total Marks: 30</span>
+    </div>
+
+    <section>
+        <div class="section-title"><h3>SECTION A: LITERATURE</h3></div>
+        <div class="question">
+            <strong>Q1. Give the meanings:</strong>
+            <p>1. Dismal: <input type="text"> <span class="ans-key">Ans: Gloomy / Sad</span></p>
+            <p>2. Gingham: <input type="text"> <span class="ans-key">Ans: Checkered cotton fabric</span></p>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-title"><h3>SECTION B: LANGUAGE</h3></div>
+        
+        <div class="question">
+            <strong>Q2. Tenses (Past/Present/Future):</strong>
+            <p>1. Yesterday, Dorothy _______ (walk) to the woods. <input type="text"> <span class="ans-key">Ans: walked</span></p>
+            <p>2. The Wizard _______ (live) in Oz now. <input type="text"> <span class="ans-key">Ans: lives</span></p>
+        </div>
+
+        <div class="question">
+            <strong>Q3. Adverbs (Identify the Kind):</strong>
+            <p>1. The women walked <u>slowly</u>. <input type="text"> <span class="ans-key">Ans: Manner</span></p>
+            <p>2. I will go <u>tomorrow</u>. <input type="text"> <span class="ans-key">Ans: Time</span></p>
+        </div>
+
+        <div class="question">
+            <strong>Q4. Prepositions:</strong>
+            <p>1. The dog sat _______ the table. <input type="text"> <span class="ans-key">Ans: under / on / near</span></p>
+            <p>2. Toto jumped _______ the basket. <input type="text"> <span class="ans-key">Ans: into / in</span></p>
+        </div>
+
+        <div class="question">
+            <strong>Q5. Conjunctions (and, but, because, or):</strong>
+            <p>1. He was tired _______ he kept walking. <input type="text"> <span class="ans-key">Ans: but</span></p>
+            <p>2. She cried _______ she lost her way. <input type="text"> <span class="ans-key">Ans: because</span></p>
+        </div>
+    </section>
+
+    <div class="btn-container">
+        <button class="check-btn" onclick="showAnswers()">Check My Answers</button>
+        <button class="print-btn" onclick="window.print()">Print Paper</button>
+    </div>
+
+    <div style="text-align: center; margin-top: 20px; color: #95a5a6; font-size: 0.8rem;">
+        Note: Descriptive answers (sentences) should be checked by a parent!
+    </div>
+</div>
+
+<script>
+    function showAnswers() {
+        const answers = document.querySelectorAll('.ans-key');
+        answers.forEach(ans => {
+            ans.style.display = (ans.style.display === 'inline') ? 'none' : 'inline';
+        });
+        
+        const btn = document.querySelector('.check-btn');
+        btn.innerHTML = (btn.innerHTML === 'Check My Answers') ? 'Hide Answers' : 'Check My Answers';
+    }
+</script>
+
+</body>
+</html>
