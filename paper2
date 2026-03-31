@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade 3 Science Exam - Children's Academy</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f7;
+            color: #2c3e50;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 850px;
+            margin: auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .header-box {
+            border: 2px solid #2c3e50;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+        .header-box h2 {
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .student-details {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            text-align: left;
+            font-weight: bold;
+        }
+        h3 {
+            color: #2980b9;
+            margin-top: 35px;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 5px;
+        }
+        .instructions {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+        .question-block {
+            margin-bottom: 20px;
+            padding: 12px;
+            border-radius: 6px;
+            background-color: #fafbfc;
+            border: 1px solid #eef0f2;
+        }
+        input[type="text"] {
+            padding: 6px 10px;
+            margin: 4px 0;
+            border: 1px solid #bdc3c7;
+            border-radius: 4px;
+            font-size: 1em;
+            font-family: inherit;
+        }
+        input[type="text"].short {
+            width: 150px;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            border: 1px solid #bdc3c7;
+            border-radius: 4px;
+            font-size: 1em;
+            font-family: inherit;
+            height: 70px;
+            resize: vertical;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 40px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #219a52;
+        }
+        .feedback {
+            display: block;
+            font-weight: bold;
+            margin-top: 8px;
+            font-size: 0.95em;
+        }
+        .correct-bg {
+            background-color: #e8f8f5;
+            border-left: 4px solid #2ecc71;
+            border-color: #d1f2eb;
+        }
+        .wrong-bg {
+            background-color: #fdedec;
+            border-left: 4px solid #e74c3c;
+            border-color: #fadbd8;
+        }
+        .manual-bg {
+            background-color: #fef9e7;
+            border-left: 4px solid #f1c40f;
+            border-color: #fcf3cf;
+        }
+        .score-board {
+            display: none;
+            text-align: center;
+            background: #34495e;
+            color: white;
+            padding: 25px;
+            border-radius: 6px;
+            margin-top: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .score-board h2 {
+            margin: 0 0 10px 0;
+            font-size: 2em;
+        }
+        .marks {
+            float: right;
+            font-weight: bold;
+            color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header-box">
+        <h2>Children's Academy Group of Schools</h2>
+        <p style="margin: 0;"><strong>SECOND SEMESTER EXAMINATION 2024-25</strong></p>
+        <div class="student-details">
+            <div>
+                Name: Reyansh<br>
+                Subject: SCIENCE
+            </div>
+            <div style="text-align: right;">
+                Marks: 50<br>
+                Time: 2 hours
+            </div>
+        </div>
+    </div>
+
+    <p class="instructions">You will not be allowed to write during the first 15 minutes. This time is to be spent in reading the question paper.<br>The time given at the head of this paper is the time allowed for writing the answers.</p>
+
+    <h2 style="text-align: center; border-bottom: 2px solid #2c3e50; padding-bottom: 10px;">Section A</h2>
+
+    <h3>Q1. Fill in the blanks. <span class="marks">[5]</span></h3>
+    <ol>
+        <li class="question-block" id="qb-1-1">The framework of bones inside our body is known as the <input type="text" id="q-1-1" class="short">. <span class="feedback" id="fb-1-1"></span></li>
+        <li class="question-block" id="qb-1-2">The sun is a huge ball of hot, glowing <input type="text" id="q-1-2" class="short">. <span class="feedback" id="fb-1-2"></span></li>
+        <li class="question-block" id="qb-1-3">Rain is the main natural source of <input type="text" id="q-1-3" class="short"> water on Earth. <span class="feedback" id="fb-1-3"></span></li>
+        <li class="question-block" id="qb-1-4">A substance that dissolves completely in a liquid is called a <input type="text" id="q-1-4" class="short">. <span class="feedback" id="fb-1-4"></span></li>
+        <li class="question-block" id="qb-1-5">The <input type="text" id="q-1-5" class="short"> system is an organ system that breaks down the food we eat. <span class="feedback" id="fb-1-5"></span></li>
+    </ol>
+
+    <h3>Q2. Complete the analogy. <span class="marks">[5]</span></h3>
+    <ol>
+        <li class="question-block" id="qb-2-1">solid water : ice :: gas water : <input type="text" id="q-2-1" class="short"> <span class="feedback" id="fb-2-1"></span></li>
+        <li class="question-block" id="qb-2-2">breathing in oxygen : lungs :: pumping blood : <input type="text" id="q-2-2" class="short"> <span class="feedback" id="fb-2-2"></span></li>
+        <li class="question-block" id="qb-2-3">solar cooker : solar energy :: dam : <input type="text" id="q-2-3" class="short"> <span class="feedback" id="fb-2-3"></span></li>
+        <li class="question-block" id="qb-2-4">insoluble in water : sand :: soluble in water : <input type="text" id="q-2-4" class="short" placeholder="e.g., salt"> <span class="feedback" id="fb-2-4"></span></li>
+        <li class="question-block" id="qb-2-5">brain : nervous system :: stomach : <input type="text" id="q-2-5" class="short"> <span class="feedback" id="fb-2-5"></span></li>
+    </ol>
+
+    <h3>Q3. State whether true or false. <span class="marks">[4]</span></h3>
+    <ol>
+        <li class="question-block" id="qb-3-1">Water has a fixed shape but does not have a fixed volume. <input type="text" id="q-3-1" class="short"> <span class="feedback" id="fb-3-1"></span></li>
+        <li class="question-block" id="qb-3-2">Solar energy is a renewable source of energy. <input type="text" id="q-3-2" class="short"> <span class="feedback" id="fb-3-2"></span></li>
+        <li class="question-block" id="qb-3-3">We should leave the tap running while brushing our teeth. <input type="text" id="q-3-3" class="short"> <span class="feedback" id="fb-3-3"></span></li>
+        <li class="question-block" id="qb-3-4">There are more than 600 muscles in the human body. <input type="text" id="q-3-4" class="short"> <span class="feedback" id="fb-3-4"></span></li>
+    </ol>
+
+    <h3>Q4. Give one word for the following. <span class="marks">[4]</span></h3>
+    <ol>
+        <li class="question-block" id="qb-4-1">The internal organ that controls all our body movements and thoughts: <input type="text" id="q-4-1" class="short"> <span class="feedback" id="fb-4-1"></span></li>
+        <li class="question-block" id="qb-4-2">The continuous circulation of the Earth's water by means of evaporation and condensation: <input type="text" id="q-4-2" class="short"> <span class="feedback" id="fb-4-2"></span></li>
+        <li class="question-block" id="qb-4-3">A liquid in which a solute dissolves: <input type="text" id="q-4-3" class="short"> <span class="feedback" id="fb-4-3"></span></li>
+        <li class="question-block" id="qb-4-4">The energy that we get directly from the sun: <input type="text" id="q-4-4" class="short"> <span class="feedback" id="fb-4-4"></span></li>
+    </ol>
+
+    <h3>Q5. Identify the processes. <span class="marks">[2]</span></h3>
+    <ol>
+        <li class="question-block" id="qb-5-1">The process of water changing into water vapour on heating: <input type="text" id="q-5-1" class="short"> <span class="feedback" id="fb-5-1"></span></li>
+        <li class="question-block" id="qb-5-2">The process of water vapour changing into water drops on cooling: <input type="text" id="q-5-2" class="short"> <span class="feedback" id="fb-5-2"></span></li>
+    </ol>
+
+    <h2 style="text-align: center; border-bottom: 2px solid #2c3e50; padding-bottom: 10px; margin-top: 50px;">Section B</h2>
+
+    <h3>Q6. Circle the odd one out and give a reason for your selection. <span class="marks">[6]</span></h3>
+    <ol>
+        <li class="question-block manual-review" id="qb-6-1">sand / salt / mud / wood<br><textarea placeholder="Type the odd one out and the reason here..."></textarea> <span class="feedback" id="fb-6-1"></span></li>
+        <li class="question-block manual-review" id="qb-6-2">sun / water / wind / coal<br><textarea></textarea> <span class="feedback" id="fb-6-2"></span></li>
+        <li class="question-block manual-review" id="qb-6-3">heart / brain / hands / lungs<br><textarea></textarea> <span class="feedback" id="fb-6-3"></span></li>
+    </ol>
+
+    <h3>Q7. Give reasons. Write two points for each. <span class="marks">[4]</span></h3>
+    <ol>
+        <li class="question-block manual-review" id="qb-7-1">We must drink purified or boiled water.<br><textarea></textarea> <span class="feedback" id="fb-7-1"></span></li>
+        <li class="question-block manual-review" id="qb-7-2">Solar energy is considered an excellent source of energy for the future.<br><textarea></textarea> <span class="feedback" id="fb-7-2"></span></li>
+    </ol>
+
+    <h3>Q8. Answer the following. <span class="marks">[5]</span></h3>
+    <ol>
+        <li class="question-block manual-review" id="qb-8-1">List any three properties of pure water.<br><textarea></textarea> <span class="feedback" id="fb-8-1"></span></li>
+        <li class="question-block manual-review" id="qb-8-2">Write two simple ways to conserve water at home.<br><textarea></textarea> <span class="feedback" id="fb-8-2"></span></li>
+    </ol>
+
+    <h3>Q9. Read the scenarios and answer the given questions. <span class="marks">[6]</span></h3>
+    <div class="question-block manual-review" id="qb-9-1">
+        <strong>1) Scenario:</strong> A boy mixes a spoonful of sugar into a glass of water and stirs it until it disappears.<br>
+        a) Identify the solute and the solvent in this activity.<br><input type="text"><br>
+        b) What is the final mixture called?<br><input type="text"><br>
+        c) Does the volume of the water increase significantly after the sugar dissolves?<br><input type="text">
+        <span class="feedback" id="fb-9-1"></span>
+    </div>
+    <div class="question-block manual-review" id="qb-9-2">
+        <strong>2) Scenario:</strong> Think about the respiratory system in the human body.<br>
+        a) Identify the main organ involved in breathing.<br><input type="text"><br>
+        b) How is this organ protected?<br><input type="text"><br>
+        c) State the main function of this organ.<br><input type="text">
+        <span class="feedback" id="fb-9-2"></span>
+    </div>
+
+    <h3>Q10. Distinguish between the following. <span class="marks">[7]</span></h3>
+    <ol>
+        <li class="question-block manual-review" id="qb-10-1">Soluble substances and Insoluble substances<br><textarea placeholder="Write differences and give examples..."></textarea> <span class="feedback" id="fb-10-1"></span></li>
+        <li class="question-block manual-review" id="qb-10-2">Internal organs and External organs<br><textarea placeholder="Write differences and give examples..."></textarea> <span class="feedback" id="fb-10-2"></span></li>
+    </ol>
+
+    <h3>Q11. Think and answer. <span class="marks">[2]</span></h3>
+    <div class="question-block manual-review" id="qb-11-1">
+        Reyansh left a small bowl of water out on the balcony in the hot Mumbai sun. When he checked the next evening, the bowl was completely empty, even though no one had touched or spilled it. Explain to Reyansh what happened to the water and name the process.<br>
+        <textarea></textarea>
+        <span class="feedback" id="fb-11-1"></span>
+    </div>
+
+    <button onclick="reviewExam()">Submit Paper for Review</button>
+
+    <div class="score-board" id="scoreBoard">
+        <h2 id="scoreText"></h2>
+        <p style="font-size: 1.1em; color: #ecf0f1;">The objective questions (Section A) have been auto-graded. Please ask a parent to review Section B using the answer keys provided below each question to calculate your final score out of 50.</p>
+    </div>
+</div>
+
+<script>
+    // Auto-grade exact answers for Section A
+    const autoAnswers = {
+        '1-1': ['skeleton'],
+        '1-2': ['gas', 'gases'],
+        '1-3': ['fresh'],
+        '1-4': ['solute'],
+        '1-5': ['digestive'],
+        '2-1': ['steam', 'water vapour', 'vapor', 'vapour'],
+        '2-2': ['heart'],
+        '2-3': ['water energy', 'hydro energy', 'water', 'hydroelectricity', 'hydro'],
+        '2-4': ['salt', 'sugar', 'baking soda', 'coffee', 'milk powder'], // common correct answers
+        '2-5': ['digestive system', 'digestive'],
+        '3-1': ['false', 'f'],
+        '3-2': ['true', 't'],
+        '3-3': ['false', 'f'],
+        '3-4': ['true', 't'],
+        '4-1': ['brain'],
+        '4-2': ['water cycle'],
+        '4-3': ['solvent'],
+        '4-4': ['solar energy', 'solar'],
+        '5-1': ['evaporation'],
+        '5-2': ['condensation']
+    };
+
+    // Manual review ideal answers for Section B
+    const manualAnswers = {
+        '6-1': '<strong>Wood.</strong> Reason: Wood floats on water, while sand, salt, and mud sink or dissolve.',
+        '6-2': '<strong>Coal.</strong> Reason: Coal is a non-renewable resource, while sun, water, and wind are renewable.',
+        '6-3': '<strong>Hands.</strong> Reason: Hands are external organs, while the heart, brain, and lungs are internal organs.',
+        '7-1': '1. It kills germs and bacteria. 2. It removes dirt and impurities, preventing waterborne diseases.',
+        '7-2': '1. It is a renewable resource (will never run out). 2. It does not cause pollution.',
+        '8-1': 'Pure water is colourless, tasteless, and odourless (or clear/transparent).',
+        '8-2': '1. Fix leaking taps immediately. 2. Turn off the tap while brushing teeth or use a bucket for bathing.',
+        '9-1': 'a) Solute: Sugar, Solvent: Water. b) Solution (or sugar water). c) No, the volume remains almost the same.',
+        '9-2': 'a) Lungs. b) Protected by the ribcage. c) Helps us breathe by taking in oxygen.',
+        '10-1': '<strong>Soluble:</strong> Dissolves completely in liquid (e.g., Salt, Sugar). <strong>Insoluble:</strong> Does not dissolve in liquid (e.g., Sand, Wood).',
+        '10-2': '<strong>Internal:</strong> Inside the body, cannot be seen (e.g., Brain, Heart). <strong>External:</strong> Outside the body, can be seen (e.g., Hands, Eyes).',
+        '11-1': 'The heat from the sun warmed the water and turned it into water vapour, which mixed with the air. This process is called <strong>Evaporation</strong>.'
+    };
+
+    function checkAuto(id) {
+        let isCorrect = false;
+        let block = document.getElementById('qb-' + id);
+        let inputEle = document.getElementById('q-' + id);
+        let feedback = document.getElementById('fb-' + id);
+        
+        let userAnswer = inputEle.value.trim().toLowerCase();
+        
+        // Check if user answer matches any in the array
+        if (autoAnswers[id].includes(userAnswer)) {
+            isCorrect = true;
+        }
+
+        block.classList.remove('correct-bg', 'wrong-bg');
+        
+        if (isCorrect) {
+            block.classList.add('correct-bg');
+            feedback.innerHTML = '✅ Correct!';
+            feedback.style.color = '#27ae60';
+            return 1; // 1 mark
+        } else {
+            block.classList.add('wrong-bg');
+            let correctText = autoAnswers[id][0]; // Show the primary correct answer
+            feedback.innerHTML = '❌ Incorrect. Correct answer: <strong>' + correctText.toUpperCase() + '</strong>';
+            feedback.style.color = '#c0392b';
+            return 0; // 0 marks
+        }
+    }
+
+    function showManual(id) {
+        let block = document.getElementById('qb-' + id);
+        let feedback = document.getElementById('fb-' + id);
+        block.classList.add('manual-bg');
+        feedback.innerHTML = '📝 <em>Ideal Answer Key:</em> <span style="color:#2c3e50; font-weight:normal;">' + manualAnswers[id] + '</span>';
+        feedback.style.color = '#d35400';
+    }
+
+    function reviewExam() {
+        let autoScore = 0;
+        let totalAuto = 20; // 20 blanks/1-mark questions in Section A
+
+        // Loop through all Section A IDs to grade
+        for(let i=1; i<=5; i++) autoScore += checkAuto('1-'+i);
+        for(let i=1; i<=5; i++) autoScore += checkAuto('2-'+i);
+        for(let i=1; i<=4; i++) autoScore += checkAuto('3-'+i);
+        for(let i=1; i<=4; i++) autoScore += checkAuto('4-'+i);
+        for(let i=1; i<=2; i++) autoScore += checkAuto('5-'+i);
+
+        // Loop through Section B to show answers
+        for(let i=1; i<=3; i++) showManual('6-'+i);
+        for(let i=1; i<=2; i++) showManual('7-'+i);
+        for(let i=1; i<=2; i++) showManual('8-'+i);
+        for(let i=1; i<=2; i++) showManual('9-'+i);
+        for(let i=1; i<=2; i++) showManual('10-'+i);
+        showManual('11-1');
+
+        // Display Score
+        let scoreBoard = document.getElementById('scoreBoard');
+        let scoreText = document.getElementById('scoreText');
+        scoreBoard.style.display = 'block';
+        scoreText.innerHTML = 'Section A Score: ' + autoScore + ' / ' + totalAuto;
+        
+        // Scroll to the top of the scoreboard
+        scoreBoard.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>
