@@ -2,152 +2,171 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grade III ICSE Maths Practice - Reyansh Jaggi</title>
+    <title>Grade 3 Maths Revision - Children's Academy Replica</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 0 auto; padding: 20px; background-color: #f8f9fa; }
-        .paper-container { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-top: 15px solid #1a5276; }
-        .header { text-align: center; border-bottom: 2px solid #333; padding-bottom: 15px; margin-bottom: 20px; }
-        .school-name { font-size: 26px; font-weight: bold; color: #1a5276; }
-        .sub-header { font-size: 14px; font-style: italic; margin-bottom: 10px; }
-        .sheet-title { font-size: 20px; font-weight: bold; text-decoration: underline; }
-        .student-meta { display: flex; justify-content: space-between; margin: 20px 0; font-weight: bold; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        h3 { background: #e9ecef; padding: 8px; border-left: 5px solid #1a5276; font-size: 18px; margin-top: 30px; }
-        .question { margin: 15px 0; padding-left: 10px; }
-        .ans-box { color: #d35400; font-weight: bold; display: none; margin-left: 10px; background: #fff3cd; padding: 2px 8px; border: 1px dashed #d35400; border-radius: 4px; }
-        input[type="text"] { border: none; border-bottom: 1px solid #999; width: 140px; text-align: center; font-size: 15px; background: transparent; }
-        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-        th, td { border: 1px solid #333; padding: 10px; text-align: center; }
-        th { background-color: #f2f2f2; }
-        .footer { text-align: center; font-size: 11px; color: #777; margin-top: 50px; border-top: 1px solid #eee; padding-top: 10px; }
-        .btn-check { position: fixed; bottom: 30px; right: 30px; padding: 15px 25px; background: #1a5276; color: white; border: none; border-radius: 50px; cursor: pointer; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 100; }
-        .btn-check:hover { background: #2471a3; }
+        body { font-family: Arial, sans-serif; background: #f0f0f0; padding: 20px; }
+        .page { background: white; width: 850px; margin: 20px auto; padding: 50px; box-shadow: 0 0 10px rgba(0,0,0,0.1); position: relative; min-height: 1000px; }
+        .header { text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        .school-name { font-size: 24px; font-weight: bold; }
+        .meta-data { display: flex; justify-content: space-between; margin-top: 20px; font-weight: bold; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        h3 { background: #f2f2f2; padding: 5px; border-left: 5px solid #1a5276; margin-top: 30px; }
+        .q { margin: 15px 0; line-height: 1.8; }
+        .ans { color: #d35400; font-weight: bold; display: none; background: #fff3cd; padding: 2px 5px; border-radius: 3px; }
+        input { border: none; border-bottom: 1px solid #000; width: 120px; text-align: center; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { border: 1px solid #000; padding: 8px; text-align: center; }
+        .footer-page { position: absolute; bottom: 20px; width: 88%; text-align: center; font-size: 12px; color: #666; border-top: 1px solid #eee; padding-top: 5px; }
+        .check-btn { position: fixed; bottom: 20px; right: 20px; padding: 15px 25px; background: #1a5276; color: white; border: none; border-radius: 50px; cursor: pointer; font-size: 16px; z-index: 1000; }
     </style>
 </head>
 <body>
 
-<div class="paper-container">
-    <div class="header">
-        <div class="school-name">CHILDREN'S ACADEMY</div>
-        <div class="sub-header">HARD WORK & DISCIPLINE ARE OUR TRADITION</div>
-        <div class="sheet-title">Mathematics Revision Sheet (Semester II)</div>
-    </div>
+<button class="check-btn" onclick="toggleAnswers()">Check Answers</button>
 
-    <div class="student-meta">
+<div class="page">
+    <div class="header">
+        <div class="school-name">Children's Academy</div>
+        <div>HARD WORK & DISCIPLINE ARE OUR TRADITION</div>
+        <div style="font-weight:bold; margin-top:10px;">Revision Sheet (Semester II)</div>
+    </div>
+    <div class="meta-data">
         <span>Name: Reyansh Jaggi</span>
         <span>Grade: III</span>
         <span>Subject: Mathematics</span>
     </div>
 
-    <h3>Q1. Fill in the blanks:</h3>
-    <div class="question">a) The time 19:15 hours in 12-hour format will be <input type="text"> <span class="ans-box">7:15 p.m.</span></div>
-    <div class="question">b) Next element in the pattern 55, 45, 35, 25, is <input type="text"> <span class="ans-box">15</span></div>
-    <div class="question">c) $63 \div 7 =$ <input type="text"> <span class="ans-box">9</span></div>
-    <div class="question">d) 8 m 4 cm = <input type="text"> cm <span class="ans-box">804</span></div>
-    <div class="question">e) 12 midnight in 24-hour format will be <input type="text"> <span class="ans-box">00:00 hours</span></div>
-    <div class="question">f) 9:45 is also known as <input type="text"> <span class="ans-box">quarter to 10</span></div>
+    <h3>Q1. Fill in the blanks.</h3>
+    <div class="q">a) The time 21:30 hours in 12-hour format will be <input type="text"> <span class="ans">9:30 p.m.</span></div>
+    <div class="q">b) Pattern 52, 42, 32, 22, <input type="text"> <span class="ans">12</span></div>
+    <div class="q">c) $56 \div 8 = $ <input type="text"> <span class="ans">7</span></div>
+    <div class="q">d) 6 m 4 cm = <input type="text"> cm <span class="ans">604</span></div>
+    <div class="q">e) 12 midnight in 24-hour format: <input type="text"> <span class="ans">00:00 hours</span></div>
+    <div class="q">f) 8:45 is also known as <input type="text"> <span class="ans">quarter to 9</span></div>
 
     <h3>Q2. Write the correct standard unit (m, cm, kg, g, l, ml):</h3>
-    <div class="question">a) Water in a large overhead tank: <input type="text"> <span class="ans-box">l (Litres)</span></div>
-    <div class="question">b) Height of a street light: <input type="text"> <span class="ans-box">m (Metres)</span></div>
-    <div class="question">c) Weight of a packet of chips: <input type="text"> <span class="ans-box">g (Grams)</span></div>
-    <div class="question">d) Length of a mobile phone: <input type="text"> <span class="ans-box">cm (Centimetres)</span></div>
-
-    <h3>Q3. State True or False:</h3>
-    <div class="question">a) 6 times 8 is 48: <input type="text"> <span class="ans-box">True</span></div>
-    <div class="question">b) Quarter to 4 is written as 4:15: <input type="text"> <span class="ans-box">False (3:45)</span></div>
-    <div class="question">c) 1 day has 24 hours: <input type="text"> <span class="ans-box">True</span></div>
-
-    <h3>Q4. Divide by equal grouping:</h3>
-    <div class="question">How many groups of 6 can be formed from 54 marbles? <input type="text"> <span class="ans-box">9</span></div>
-
-    <h3>Q5. Long Division Method (Notebook):</h3>
-    <div class="question">a) $745 \div 5$ <span class="ans-box">149</span> | b) $816 \div 4$ <span class="ans-box">204</span></div>
-
-    <h3>Q6. Divide using the number line:</h3>
-    <div class="question">Show $16 \div 4 =$ <input type="text"> <span class="ans-box">4 (jumps of 4)</span></div>
-
-    <h3>Q7. Rewrite using 24-hour clock:</h3>
-    <div class="question">a) Flight departs at 10:20 p.m.: <input type="text"> <span class="ans-box">22:20 hours</span></div>
-    <div class="question">b) Library opens at 9:00 a.m.: <input type="text"> <span class="ans-box">09:00 hours</span></div>
-
-    <h3>Q8. Complete the pattern:</h3>
-    <div class="question">ABC, BCD, CDE, <input type="text"> <span class="ans-box">DEF</span></div>
-
-    <h3>Q9. Solve the following:</h3>
-    <div class="question">a) Add 340ml and 560ml: <input type="text"> <span class="ans-box">900ml</span></div>
-    <div class="question">b) Subtract 215kg from 500kg: <input type="text"> <span class="ans-box">285kg</span></div>
-
-    <h3>Q10. Convert the following:</h3>
-    <div class="question">a) 5 m 12 cm into cm: <input type="text"> <span class="ans-box">512 cm</span></div>
-    <div class="question">b) 2 days into hours: <input type="text"> <span class="ans-box">48 hours</span></div>
-
-    <h3>Q11. Circle the correct measure:</h3>
-    <div class="question">Weight of a school bag (4g or 4kg)? <input type="text"> <span class="ans-box">4kg</span></div>
-
-    <h3>Q12. Capacity Image Logic:</h3>
-    <div class="question">If 1 Bucket = 5 Jugs, then 4 Buckets = <input type="text"> Jugs. <span class="ans-box">20</span></div>
-
-    <h3>Q13. Division Statement:</h3>
-    <div class="question">If $9 \times 6 = 54$, then $54 \div 9 =$ <input type="text"> <span class="ans-box">6</span></div>
-
-    <h3>Q14. 24-Hour Format:</h3>
-    <div class="question">12:30 a.m. in 24-hour format: <input type="text"> <span class="ans-box">00:30 hours</span></div>
-
-    <h3>Q15. Draw Clock Hands (Mental Practice):</h3>
-    <div class="question">Where is the minute hand for "Quarter to 8"? <span class="ans-box">At 9</span></div>
-
-    <h3>Q16. Solve the following Word Problems:</h3>
-    <div class="question">a) A box has 42 chocolates. If shared equally among 6 kids, how many per kid? <input type="text"> <span class="ans-box">7</span></div>
-    <div class="question">b) Rahul is 145 cm tall. His younger brother is 20 cm shorter. Brother's height? <input type="text"> <span class="ans-box">125 cm</span></div>
-    <div class="question">c) A milkman delivered 250 litres on Monday and 185 litres on Tuesday. Total? <input type="text"> <span class="ans-box">435 litres</span></div>
-    <div class="question">d) A roll has 100 m of wire. If 65 m is used, how much is left? <input type="text"> <span class="ans-box">35 m</span></div>
-    <div class="question">e) 450 kg of rice was in a shop. 125 kg was sold. Balance? <input type="text"> <span class="ans-box">325 kg</span></div>
-    <div class="question">f) One bag of flour weighs 550 g. Another weighs 350 g. Total weight? <input type="text"> <span class="ans-box">900 g</span></div>
-    <div class="question">g) 150 books are distributed equally among 5 libraries. Each gets? <input type="text"> <span class="ans-box">30 books</span></div>
-    <div class="question">h) A bottle had 750 ml of juice. 200 ml was poured out. Remaining? <input type="text"> <span class="ans-box">550 ml</span></div>
-    <div class="question">i) 484 plants are planted equally in 4 rows. Plants per row? <input type="text"> <span class="ans-box">121 plants</span></div>
-    <div class="question">j) A tank holds 600 litres. 420 litres are used. How much is left? <input type="text"> <span class="ans-box">180 litres</span></div>
-
-    <h3>Q17. Pictograph Table:</h3>
-    <div class="question">Grade I: 20 students, Grade II: 40 students. (1 icon = 10 kids). Icons for Grade II? <input type="text"> <span class="ans-box">4</span></div>
-
-    <h3>Q18. Tally Chart:</h3>
-    <div class="question">Represent the number 14 in Tally Marks: <span class="ans-box">|||| |||| ||||</span></div>
-
-    <h3>Q19. Food Survey:</h3>
-    <div class="question">If 30 kids like Salad and 12 like Nuts, difference? <input type="text"> <span class="ans-box">18</span></div>
-
-    <h3>Q20. Sales Data:</h3>
-    <div class="question">Week 1: 45 bikes. Week 2: 55 bikes. Total? <input type="text"> <span class="ans-box">100</span></div>
-
-    <h3>Q21. Car Repair Pictograph:</h3>
-    <div class="question">If 1 icon = 5 cars, and Thursday has 6 icons, cars repaired? <input type="text"> <span class="ans-box">30</span></div>
-
-    <h3>Q22. Library Data:</h3>
-    <div class="question">Math: 60, Science: 45, Hindi: 20. Which is minimum? <input type="text"> <span class="ans-box">Hindi</span></div>
-
-    <h3>Q23. Football Sales:</h3>
-    <div class="question">If 1 ball icon = 8 footballs, what is the value of 5 icons? <input type="text"> <span class="ans-box">40</span></div>
-
-    <h3>Q24. Calendar - March 2026:</h3>
-    <div class="question">a) How many Mondays are in March 2026? <input type="text"> <span class="ans-box">5 [cite: 501]</span></div>
-    <div class="question">b) What date is the third Saturday? <input type="text"> <span class="ans-box">March 21st [cite: 501]</span></div>
-
-    <div class="footer">
-        Page 1 of 1 | (Grade III Mathematics Practice Sheet) | CABN/FA/APR/2025-26
-    </div>
+    <div class="q">a) Juice in a carton: <input type="text"> <span class="ans">ml</span></div>
+    <div class="q">b) Height of a building: <input type="text"> <span class="ans">m</span></div>
+    <div class="q">c) Weight of a pencil: <input type="text"> <span class="ans">g</span></div>
+    <div class="footer-page">Page 1 of 12 | (Grade III Mathematics Revision Sheet) CABN/FA/MAR/2025-26</div>
 </div>
 
-<button class="btn-check" onclick="toggleAnswers()">Check Answers</button>
+<div class="page">
+    <div class="q">p) Sack of rice is measured in <input type="text"> <span class="ans">kg</span></div>
+    
+    <h3>Q3. State True or False:</h3>
+    <div class="q">a) 8 times 4 is 32: <input type="text"> <span class="ans">True</span></div>
+    <div class="q">b) Half past three is 3:30: <input type="text"> <span class="ans">True</span></div>
+    <div class="q">c) $120 \div 10 = 10$: <input type="text"> <span class="ans">False (12)</span></div>
+    <div class="q">d) 1 day has 25 hours: <input type="text"> <span class="ans">False (24)</span></div>
+
+    <h3>Q4. Divide by equal grouping:</h3>
+    <div class="q">How many groups of 4 from 24 hearts? <input type="text"> <span class="ans">6</span></div>
+
+    <h3>Q5. Long Division (Notebook):</h3>
+    <div class="q">a) $525 \div 5$ <span class="ans">105</span> | b) $648 \div 4$ <span class="ans">162</span></div>
+    <div class="footer-page">Page 2 of 12</div>
+</div>
+
+<div class="page">
+    <h3>Q6. Divide using the number line:</h3>
+    <div class="q">Show $18 \div 6 = $ <input type="text"> <span class="ans">3 (jumps of 6)</span></div>
+
+    <h3>Q7. Rewrite using 24-hour clock:</h3>
+    <div class="q">a) Dance class at 6:45 p.m. <input type="text"> <span class="ans">18:45 hours</span></div>
+    <div class="q">b) Lunch at 1:30 p.m. <input type="text"> <span class="ans">13:30 hours</span></div>
+    <div class="footer-page">Page 3 of 12</div>
+</div>
+
+<div class="page">
+    <h3>Q8. Complete the pattern:</h3>
+    <div class="q">a) 10, 20, 30, <input type="text"> <span class="ans">40</span></div>
+    <div class="q">b) 91, 71, 51, <input type="text"> <span class="ans">31</span></div>
+
+    <h3>Q9. Solve the following:</h3>
+    <div class="q">a) Add 320 l and 140 l: <input type="text"> <span class="ans">460 l</span></div>
+    <div class="q">b) Subtract 200 ml from 550 ml: <input type="text"> <span class="ans">350 ml</span></div>
+
+    <h3>Q10. Convert the following:</h3>
+    <div class="q">a) 4 m 15 cm into cm: <input type="text"> <span class="ans">415 cm</span></div>
+    <div class="q">b) 3 days into hours: <input type="text"> <span class="ans">72 hours</span></div>
+    <div class="footer-page">Page 4 of 12</div>
+</div>
+
+<div class="page">
+    <h3>Q11. Circle the correct measures:</h3>
+    <div class="q">Weight of a pumpkin (5g or 5kg)? <input type="text"> <span class="ans">5kg</span></div>
+
+    <h3>Q12. Capacity Observe:</h3>
+    <div class="q">If 1 Jug = 4 Glasses, then 3 Jugs = <input type="text"> Glasses. <span class="ans">12</span></div>
+
+    <h3>Q13. Multiplication to Division Fact:</h3>
+    <div class="q">If $6 \times 5 = 30$, then $30 \div 6 = $ <input type="text"> <span class="ans">5</span></div>
+    <div class="footer-page">Page 5 of 12</div>
+</div>
+
+<div class="page">
+    <h3>Q14. Write time in 24-hour format:</h3>
+    <div class="q">a) 12:45 a.m. <span class="ans">00:45 hours</span></div>
+    <div class="q">b) 07:30 p.m. <span class="ans">19:30 hours</span></div>
+
+    <h3>Q15. Draw the hands (Mental Practice):</h3>
+    <div class="q">a) Quarter past 8 | b) 6:30 | c) 9 o'clock</div>
+    <div class="footer-page">Page 6 of 12</div>
+</div>
+
+<div class="page">
+    <h3>Q16. Word Problems:</h3>
+    <div class="q">a) 45 eggs in 5 trays. Eggs per tray? <input type="text"> <span class="ans">9</span></div>
+    <div class="q) b) Ali is 150 cm. His friend is 15 cm shorter. Height? <input type="text"> <span class="ans">135 cm</span></div>
+    <div class="q">c) 600L milk donated, then 150L more. Total? <input type="text"> <span class="ans">750L</span></div>
+    <div class="q">d) 120m cloth. 100m used. Left? <input type="text"> <span class="ans">20m</span></div>
+    <div class="q">e) 500kg flour. 150kg used. Left? <input type="text"> <span class="ans">350kg</span></div>
+    <div class="footer-page">Page 7 of 12</div>
+</div>
+
+<div class="page">
+    <h3>Q19. Food Survey:</h3>
+    <table>
+        <tr><th>Food</th><th>Count</th></tr>
+        <tr><td>Fruits</td><td>35</td></tr>
+        <tr><td>Vegetables</td><td>45</td></tr>
+    </table>
+    <div class="q">a) If 5 more like fruits, total? <input type="text"> <span class="ans">40</span></div>
+    <div class="q">b) Most popular food? <input type="text"> <span class="ans">Vegetables</span></div>
+    <div class="footer-page">Page 8 of 12</div>
+</div>
+
+<div class="page">
+    <h3>Q21. Car Repair Pictograph:</h3>
+    <div class="q">1 icon = 10 cars. Monday has 3 icons. Total? <input type="text"> <span class="ans">30</span></div>
+    
+    <h3>Q22. Library Data:</h3>
+    <div class="q">Math: 50, Science: 30. Which is minimum? <input type="text"> <span class="ans">Science</span></div>
+    
+    <h3>Q23. Sports Shop:</h3>
+    <div class="q">1 ball = 5 footballs. 4 icons sold on Day 1. Total? <input type="text"> <span class="ans">20</span></div>
+    <div class="footer-page">Page 11 of 12</div>
+</div>
+
+<div class="page">
+    <h3>Q24. Calendar - March 2026:</h3>
+    <table>
+        <tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>
+        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+        <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+        <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+    </table>
+    <div class="q">a) Which month is shown? <input type="text"> <span class="ans">March 2026</span></div>
+    <div class="q">b) Date on second Saturday? <input type="text"> <span class="ans">14th March</span></div>
+    <div class="footer-page">Page 12 of 12</div>
+</div>
 
 <script>
     function toggleAnswers() {
-        const answers = document.querySelectorAll('.ans-box');
-        const btn = document.querySelector('.btn-check');
-        const isHidden = (answers[0].style.display === 'none' || answers[0].style.display === '');
-        
-        answers.forEach(ans => ans.style.display = isHidden ? 'inline' : 'none');
+        let answers = document.querySelectorAll('.ans');
+        let btn = document.querySelector('.check-btn');
+        let isHidden = answers[0].style.display === 'none' || answers[0].style.display === '';
+        answers.forEach(a => a.style.display = isHidden ? 'inline' : 'none');
         btn.innerText = isHidden ? 'Hide Answers' : 'Check Answers';
     }
 </script>
