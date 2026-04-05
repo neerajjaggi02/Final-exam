@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade 3 Mathematics Practice - ICSE Board</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f4f7f6; }
+        .paper-container { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-top: 10px solid #2c3e50; }
+        h1, h2 { color: #2c3e50; text-align: center; }
+        .section { margin-bottom: 30px; padding: 15px; border-bottom: 1px solid #eee; }
+        .question { margin: 15px 0; font-weight: 500; }
+        .ans-box { color: #27ae60; font-weight: bold; display: none; margin-left: 10px; background: #e8f6ef; padding: 2px 8px; border-radius: 4px; }
+        button { display: block; width: 200px; margin: 20px auto; padding: 10px; background-color: #2c3e50; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
+        button:hover { background-color: #34495e; }
+        .input-line { border: none; border-bottom: 1px solid #999; width: 100px; padding: 2px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: center; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+
+<div class="paper-container">
+    <h1>Mathematics Revision Sheet</h1>
+    <h2>Semester II - Grade III</h2>
+    <hr>
+    <p><strong>Student Name:</strong> Reyansh Jaggi <br> 
+       <strong>Board:</strong> ICSE <br>
+       <strong>Subject:</strong> Mathematics</p>
+    <hr>
+
+    <div class="section">
+        <h3>Q1. Fill in the blanks.</h3>
+        <div class="question">a) The time 20:15 hours in 12-hour format is <input type="text" class="input-line"> <span class="ans-box">8:15 p.m.</span></div>
+        <div class="question">b) Complete the pattern: 105, 95, 85, 75, <input type="text" class="input-line"> <span class="ans-box">65</span></div>
+        <div class="question">c) 3 hours = <input type="text" class="input-line"> minutes. <span class="ans-box">180</span></div>
+        <div class="question">d) One hour before 12:30 a.m. is <input type="text" class="input-line"> <span class="ans-box">11:30 p.m.</span></div>
+    </div>
+
+    <div class="section">
+        <h3>Q2. Write the correct standard unit (m, cm, kg, g, l, ml).</h3>
+        <div class="question">a) The capacity of a large petrol tank: <input type="text" class="input-line"> <span class="ans-box">l (litres)</span></div>
+        <div class="question">b) The weight of a feather: <input type="text" class="input-line"> <span class="ans-box">g (grams)</span></div>
+        <div class="question">c) The length of a cricket bat: <input type="text" class="input-line"> <span class="ans-box">cm or m</span></div>
+        <div class="question">d) The weight of a bag of rice: <input type="text" class="input-line"> <span class="ans-box">kg</span></div>
+    </div>
+
+    <div class="section">
+        <h3>Q3. Division and Logic.</h3>
+        <div class="question">a) $64 \div 8 = $ <input type="text" class="input-line"> <span class="ans-box">8</span></div>
+        <div class="question">b) True or False: 1 day has 25 hours. <input type="text" class="input-line"> <span class="ans-box">False (24 hours)</span></div>
+        <div class="question">c) If we put 45 chocolates into equal groups of 5, how many groups? <input type="text" class="input-line"> <span class="ans-box">9</span></div>
+        <div class="question">d) Solve: $448 \div 4 = $ <input type="text" class="input-line"> <span class="ans-box">112</span></div>
+    </div>
+
+    <div class="section">
+        <h3>Q4. Solve the Word Problems.</h3>
+        <div class="question">a) A water tank has 750 litres. If 230 litres are used, how much is left? <input type="text" class="input-line"> <span class="ans-box">520 litres</span></div>
+        <div class="question">b) Aryan is 145 cm tall. His sister is 12 cm taller. How tall is his sister? <input type="text" class="input-line"> <span class="ans-box">157 cm</span></div>
+    </div>
+
+    <div class="section">
+        <h3>Q5. Data Interpretation.</h3>
+        <p>Look at the table below showing fruit preferences:</p>
+        <table>
+            <tr><th>Fruit</th><th>Number of Students</th></tr>
+            <tr><td>Apple</td><td>25</td></tr>
+            <tr><td>Mango</td><td>40</td></tr>
+            <tr><td>Banana</td><td>15</td></tr>
+        </table>
+        <div class="question">a) Which fruit is the most popular? <input type="text" class="input-line"> <span class="ans-box">Mango</span></div>
+        <div class="question">b) How many more students like Apples than Bananas? <input type="text" class="input-line"> <span class="ans-box">10 (25-15)</span></div>
+    </div>
+
+    <button onclick="toggleAnswers()">Check My Answers</button>
+</div>
+
+<script>
+    function toggleAnswers() {
+        const answers = document.querySelectorAll('.ans-box');
+        const btn = document.querySelector('button');
+        const isHidden = answers[0].style.display === 'none' || answers[0].style.display === '';
+        
+        answers.forEach(ans => {
+            ans.style.display = isHidden ? 'inline-block' : 'none';
+        });
+
+        btn.innerText = isHidden ? 'Hide Answers' : 'Check My Answers';
+    }
+</script>
+
+</body>
+</html>
