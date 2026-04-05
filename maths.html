@@ -2,101 +2,161 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Reyansh - Grade 3 Maths Revision Replica</title>
+    <title>ICSE Grade 3 Maths Revision - Children's Academy Replica</title>
     <style>
-        body { font-family: 'Arial', sans-serif; background: #555; margin: 0; padding: 20px; }
-        .page { background: white; width: 800px; min-height: 1050px; margin: 0 auto 30px auto; padding: 50px; box-shadow: 0 0 20px rgba(0,0,0,0.5); position: relative; box-sizing: border-box; }
-        .header { text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; }
-        .school-name { font-size: 24px; font-weight: bold; }
-        .meta-data { display: flex; justify-content: space-between; margin: 20px 0; font-weight: bold; border-bottom: 1px solid #eee; padding-bottom: 5px; }
-        h3 { background: #f2f2f2; padding: 8px; border-left: 6px solid #1a5276; margin-top: 25px; font-size: 18px; }
-        .q { margin: 15px 0; line-height: 1.6; }
-        .ans { color: #d35400; font-weight: bold; display: none; background: #fff3cd; padding: 2px 5px; border-radius: 3px; border: 1px dashed #d35400; }
-        input { border: none; border-bottom: 1px solid #000; width: 100px; text-align: center; font-size: 15px; }
-        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
-        th, td { border: 1px solid #000; padding: 8px; text-align: center; }
-        .footer-pg { position: absolute; bottom: 20px; left: 50px; right: 50px; text-align: center; font-size: 12px; color: #666; border-top: 1px solid #eee; padding-top: 5px; }
-        
-        /* CSS Clock Drawing */
-        .clock { width: 80px; height: 80px; border: 3px solid #333; border-radius: 50%; display: inline-block; position: relative; vertical-align: middle; margin: 10px; }
-        .hand { position: absolute; bottom: 50%; left: 50%; transform-origin: bottom; background: #333; border-radius: 5px; }
-        .hour { width: 3px; height: 25%; }
-        .minute { width: 2px; height: 40%; }
-
-        .btn-check { position: fixed; bottom: 20px; right: 20px; padding: 15px 25px; background: #1a5276; color: white; border: none; border-radius: 50px; cursor: pointer; font-size: 18px; box-shadow: 0 4px 10px rgba(0,0,0,0.4); z-index: 1000; }
+        body { font-family: 'Times New Roman', serif; background-color: #444; margin: 0; padding: 20px; }
+        .page { background: white; width: 850px; min-height: 1100px; margin: 0 auto 40px auto; padding: 60px; box-shadow: 0 0 15px rgba(0,0,0,0.5); position: relative; box-sizing: border-box; }
+        .header { text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px; }
+        .school-name { font-size: 28px; font-weight: bold; letter-spacing: 1px; }
+        .motto { font-size: 14px; font-style: italic; margin: 5px 0; }
+        .sheet-info { font-size: 20px; font-weight: bold; text-decoration: underline; margin-top: 10px; }
+        .meta { display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 30px; border-bottom: 1px solid #ccc; padding-bottom: 10px; }
+        h3 { background: #f0f0f0; padding: 10px; border-left: 8px solid #1a5276; font-size: 18px; margin-top: 35px; text-transform: uppercase; }
+        .q-row { margin: 18px 0; line-height: 1.8; font-size: 16px; }
+        .ans-key { color: #b03a2e; font-weight: bold; display: none; background: #fdf2e9; padding: 2px 8px; border: 1px dashed #b03a2e; border-radius: 4px; margin-left: 10px; }
+        input[type="text"] { border: none; border-bottom: 1px solid #333; width: 130px; text-align: center; font-family: 'Courier New', monospace; font-size: 16px; background: transparent; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #000; padding: 10px; text-align: center; }
+        th { background-color: #f2f2f2; }
+        .footer { position: absolute; bottom: 30px; left: 60px; right: 60px; text-align: center; font-size: 12px; color: #555; border-top: 1px solid #eee; padding-top: 10px; }
+        .btn-check { position: fixed; bottom: 30px; right: 30px; padding: 15px 30px; background: #1a5276; color: white; border: none; border-radius: 50px; cursor: pointer; font-size: 18px; font-weight: bold; box-shadow: 0 5px 15px rgba(0,0,0,0.4); z-index: 999; }
+        .pictograph-icon { font-size: 24px; color: #2e86c1; }
     </style>
 </head>
 <body>
 
-<button class="btn-check" onclick="toggleAns()">Check Answers</button>
+<button class="btn-check" onclick="revealAnswers()">Validate My Work</button>
 
 <div class="page">
     <div class="header">
-        <div class="school-name">Children's Academy</div>
-        <div>HARD WORK & DISCIPLINE ARE OUR TRADITION</div>
-        <div style="font-weight:bold; margin-top:5px;">Revision Sheet (Semester II)</div>
+        <div class="school-name">CHILDREN'S ACADEMY GROUP OF SCHOOLS</div>
+        <div class="motto">"Hard Work & Discipline Are Our Tradition"</div>
+        <div class="sheet-info">Mathematics Revision Sheet (Semester II)</div>
     </div>
-    <div class="meta-data">
-        <span>Name: Reyansh Jaggi</span>
+    <div class="meta">
+        <span>Student Name: Reyansh Jaggi</span>
         <span>Grade: III</span>
-        <span>Subject: Mathematics</span>
+        <span>Div: ____</span>
     </div>
 
-    <h3>Q1. Fill in the blanks.</h3>
-    <div class="q">a) The time 17:15 hours in 12-hour format: <input type="text"> <span class="ans">5:15 p.m.</span> [cite: 19]</div>
-    <div class="q">b) Pattern: 66, 56, 46, 36, <input type="text"> <span class="ans">26</span> [cite: 21]</div>
-    <div class="q">c) $48 \div 6 = $ <input type="text"> <span class="ans">8</span> [cite: 28]</div>
-    <div class="q">d) 4 m 12 cm = <input type="text"> cm <span class="ans">412</span> [cite: 29]</div>
-    <div class="q">e) 12 midnight in 24-hr format: <input type="text"> <span class="ans">00:00 hours</span> [cite: 33]</div>
-    <div class="q">f) 7:45 is also known as <input type="text"> <span class="ans">quarter to 8</span> [cite: 34]</div>
-    <div class="q">g) $24 \div 3 = $ <input type="text"> <span class="ans">8</span> [cite: 36]</div>
-    <div class="q">h) 1 hour = <input type="text"> minutes <span class="ans">60</span> [cite: 38]</div>
-    <div class="q">i) If $9 \times 3 = 27$, then $27 \div 3 = $ <input type="text"> <span class="ans">9</span> [cite: 41]</div>
+    <h3>Q1. Fill in the blanks. [cite: 18]</h3>
+    <div class="q-row">a) The time 19:45 hours in 12-hour format will be <input type="text"> <span class="ans-key">7:45 p.m.</span> [cite: 19]</div>
+    <div class="q-row">b) The next element in the pattern 95, 85, 75, 65, is <input type="text"> <span class="ans-key">55</span> [cite: 21]</div>
+    <div class="q-row">c) $72 \div 8 =$ <input type="text"> <span class="ans-key">9</span> [cite: 28]</div>
+    <div class="q-row">d) 6 m 4 cm = <input type="text"> cm <span class="ans-key">604</span> [cite: 29]</div>
+    <div class="q-row">e) 12 midnight in 24-hour format will be <input type="text"> <span class="ans-key">00:00 hours</span> [cite: 33]</div>
+    <div class="q-row">f) 10:45 is also known as <input type="text"> (quarter to...) <span class="ans-key">quarter to 11</span> [cite: 34, 35]</div>
+    <div class="q-row">g) 48 pencils shared in groups of 6 gives <input type="text"> groups. <span class="ans-key">8</span> [cite: 36, 37]</div>
+    <div class="q-row">h) 3 hours = <input type="text"> minutes. <span class="ans-key">180</span> [cite: 38, 39]</div>
+    <div class="q-row">i) If $8 \times 4 = 32$, then $32 \div 4 =$ <input type="text"> <span class="ans-key">8</span> [cite: 41]</div>
 
-    <h3>Q2. Standard Units (m, cm, kg, g, l, ml):</h3>
-    <div class="q">a) Height of a tree: <input type="text"> <span class="ans">m</span> [cite: 50]</div>
-    <div class="q">b) Medicine in a spoon: <input type="text"> <span class="ans">ml</span> [cite: 51]</div>
-    <div class="q">c) Weight of a laptop: <input type="text"> <span class="ans">kg</span> [cite: 61]</div>
-    <div class="q">d) Length of a pencil: <input type="text"> <span class="ans">cm</span> [cite: 65]</div>
-
-    <div class="footer-pg">Page 1 of 12 | (Grade III Mathematics Revision Sheet) CABN/FA/MAR/2025-26 [cite: 63, 64]</div>
+    <h3>Q2. Write the correct standard unit (m, cm, kg, g, l, ml): [cite: 48]</h3>
+    <div class="q-row">a) Capacity of a swimming pool: <input type="text"> <span class="ans-key">l</span> [cite: 49]</div>
+    <div class="q-row">b) Height of a lamp post: <input type="text"> <span class="ans-key">m</span> [cite: 50]</div>
+    <div class="q-row">c) Medicine in a syringe: <input type="text"> <span class="ans-key">ml</span> [cite: 51]</div>
+    <div class="q-row">d) Weight of an apple: <input type="text"> <span class="ans-key">g</span> [cite: 52]</div>
+    
+    <div class="footer">Page 1 of 12 | (Grade III Mathematics Revision Sheet) CABN/FA/MAR/2025-26 [cite: 63, 64]</div>
 </div>
 
 <div class="page">
-    <h3>Q3. State True or False:</h3>
-    <div class="q">a) 6 times 7 is 42: <input type="text"> <span class="ans">True</span> [cite: 74]</div>
-    <div class="q">b) Half past five is 5:30: <input type="text"> <span class="ans">True</span> [cite: 76]</div>
-    <div class="q">c) $160 \div 10 = 16$: <input type="text"> <span class="ans">True</span> [cite: 79]</div>
-    <div class="q">d) 1 day has 23 hours: <input type="text"> <span class="ans">False (24)</span> [cite: 82]</div>
+    <h3>Q3. State whether the following are TRUE or FALSE: [cite: 73]</h3>
+    <div class="q-row">a) 8 times 7 is 54: <input type="text"> <span class="ans-key">False (56)</span> [cite: 74]</div>
+    <div class="q-row">b) Half past four is 4:30: <input type="text"> <span class="ans-key">True</span> [cite: 76]</div>
+    <div class="q-row">c) $180 \div 10 = 18$: <input type="text"> <span class="ans-key">True</span> [cite: 78]</div>
+    <div class="q-row">d) 1 day has 25 hours: <input type="text"> <span class="ans-key">False (24)</span> [cite: 82]</div>
 
-    <h3>Q4. Equal Grouping:</h3>
-    <div class="q">How many groups of 4 can be made from 32 stars? <input type="text"> <span class="ans">8</span> [cite: 96, 97]</div>
+    <h3>Q4. Divide by equal grouping: [cite: 96]</h3>
+    <div class="q-row">How many groups of 7 can be made from 49 stars? <input type="text"> <span class="ans-key">7</span> [cite: 97]</div>
 
-    <h3>Q5. Long Division Method:</h3>
-    <div class="q">a) $545 \div 5 =$ <span class="ans">109</span> [cite: 110]</div>
-    <div class="q">b) $824 \div 4 =$ <span class="ans">206</span> [cite: 111]</div>
+    <h3>Q5. Solve by long division method: [cite: 108]</h3>
+    <div class="q-row">a) $545 \div 5 =$ <span class="ans-key">109</span> [cite: 110] | b) $936 \div 3 =$ <span class="ans-key">312</span> [cite: 111]</div>
 
-    <div class="footer-pg">Page 2 of 12 [cite: 114]</div>
+    <h3>Q6. Divide using the number line: [cite: 117]</h3>
+    <div class="q-row">Show $15 \div 5 =$ <input type="text"> <span class="ans-key">3</span> [cite: 137, 138]</div>
+
+    <div class="footer">Page 2 of 12 [cite: 114]</div>
 </div>
 
 <div class="page">
-    <h3>Q16. Solve the Word Problems (A-J):</h3>
-    <div class="q">a) 40 apples shared by 5 kids. Each gets? <input type="text"> <span class="ans">8</span> [cite: 347, 348]</div>
-    <div class="q">b) Amit is 155 cm. His brother is 15 cm shorter. Height? <input type="text"> <span class="ans">140 cm</span> [cite: 350]</div>
-    <div class="q">c) 400L milk donated, then 250L more. Total? <input type="text"> <span class="ans">650L</span> [cite: 351, 352]</div>
-    <div class="q">d) 150m cloth. 90m stitched. Left? <input type="text"> <span class="ans">60m</span> [cite: 353, 354]</div>
-    <div class="q">e) 600kg flour. 200kg used. Left? <input type="text"> <span class="ans">400kg</span> [cite: 355, 356]</div>
-    <div class="q">f) One box is 450g. Another is 350g. Total? <input type="text"> <span class="ans">800g</span> [cite: 358, 359]</div>
-    <div class="q">g) 100 pens shared by 5 students. Each gets? <input type="text"> <span class="ans">20</span> [cite: 362]</div>
-    <div class="q">h) 700ml juice. 300ml more added. Total? <input type="text"> <span class="ans">1000ml (1L)</span> [cite: 363, 364]</div>
-    <div class="q">i) 448 packets shared by 4 villages. Each gets? <input type="text"> <span class="ans">112</span> [cite: 365, 366]</div>
-    <div class="q">j) 800L tank. 550L used. Left? <input type="text"> <span class="ans">250L</span> [cite: 367, 368]</div>
+    <h3>Q7. Rewrite using 24-hour clock: [cite: 175]</h3>
+    <div class="q-row">a) Meeting at 4:20 p.m.: <input type="text"> <span class="ans-key">16:20 hours</span> [cite: 193, 195]</div>
+    <div class="q-row">b) Book fair at 11:30 a.m.: <input type="text"> <span class="ans-key">11:30 hours</span> [cite: 196, 198]</div>
 
-    <div class="footer-pg">Page 7 of 12 [cite: 378]</div>
+    <h3>Q8. Complete the patterns: [cite: 201]</h3>
+    <div class="q-row">a) 105, 110, 115, <input type="text"> <span class="ans-key">120</span> [cite: 216, 217]</div>
+    <div class="q-row">b) 85, 65, 45, <input type="text"> <span class="ans-key">25</span> [cite: 213]</div>
+
+    <h3>Q9. Solve the following: [cite: 222]</h3>
+    <div class="q-row">a) Add 350 l and 125 l: <input type="text"> <span class="ans-key">475 l</span> [cite: 223]</div>
+    <div class="q-row">b) Subtract 300 ml from 850 ml: <input type="text"> <span class="ans-key">550 ml</span> [cite: 225]</div>
+
+    <h3>Q10. Convert the following: [cite: 226]</h3>
+    <div class="q-row">a) 4 m 15 cm into cm: <input type="text"> <span class="ans-key">415 cm</span> [cite: 227]</div>
+    <div class="q-row">b) 3 days into hours: <input type="text"> <span class="ans-key">72 hours</span> [cite: 229]</div>
+
+    <div class="footer">Page 4 of 12 [cite: 241]</div>
 </div>
 
 <div class="page">
-    <h3>Q24. Observe the Calendar - March 2026:</h3>
+    <h3>Q11. Circle the correct measure: [cite: 244]</h3>
+    <div class="q-row">Weight of a muskmelon (2g or 2kg)? <input type="text"> <span class="ans-key">2kg</span> [cite: 247, 248]</div>
+
+    <h3>Q12. Observe the image (Logic): [cite: 252]</h3>
+    <div class="q-row">If 1 Jug = 4 Glasses, then 4 Jugs = <input type="text"> Glasses. <span class="ans-key">16</span> [cite: 253, 257]</div>
+
+    <h3>Q13. Multiplication to Division statement: [cite: 271, 273]</h3>
+    <div class="q-row">If $8 \times 6 = 48$, then $48 \div 8 =$ <input type="text"> <span class="ans-key">6</span> [cite: 272]</div>
+
+    <h3>Q14. 24-hour format: [cite: 276]</h3>
+    <div class="q-row">12:30 p.m. in 24-hr format: <input type="text"> <span class="ans-key">12:30 hours</span> [cite: 293, 295]</div>
+
+    <h3>Q15. Hands of the clock (Theory): [cite: 297]</h3>
+    <div class="q-row">Where is the minute hand for "Quarter past 9"? <input type="text"> <span class="ans-key">At 3</span> [cite: 337]</div>
+
+    <div class="footer">Page 6 of 12 [cite: 335]</div>
+</div>
+
+<div class="page">
+    <h3>Q16. Solve the Word Problems (Notebook): [cite: 346]</h3>
+    <div class="q-row">a) 45 pastries in 9 boxes. How many per box? <input type="text"> <span class="ans-key">5</span> [cite: 347, 348]</div>
+    <div class="q-row">b) Amit is 155 cm. Brother is 12 cm shorter. Brother's height? <input type="text"> <span class="ans-key">143 cm</span> [cite: 350]</div>
+    <div class="q-row">c) 650L milk donated, then 140L more. Total? <input type="text"> <span class="ans-key">790L</span> [cite: 351, 352]</div>
+    <div class="q-row">d) 150m cloth. 110m stitched. Left? <input type="text"> <span class="ans-key">40m</span> [cite: 353, 354]</div>
+    <div class="q-row">e) 800kg flour. 250kg used. Left? <input type="text"> <span class="ans-key">550kg</span> [cite: 355, 356]</div>
+    <div class="q-row">f) One box is 480g. Another is 320g. Total? <input type="text"> <span class="ans-key">800g</span> [cite: 358, 359]</div>
+    <div class="q-row">g) 120 pens shared by 4 students. Each gets? <input type="text"> <span class="ans-key">30</span> [cite: 362]</div>
+    <div class="q-row">h) 750ml juice. 250ml more poured. Total? <input type="text"> <span class="ans-key">1000ml (1L)</span> [cite: 363, 364]</div>
+    <div class="q-row">i) 448 packets shared by 4 villages. Each gets? <input type="text"> <span class="ans-key">112</span> [cite: 365, 366]</div>
+    <div class="q-row">j) 900L tank. 450L used. Left? <input type="text"> <span class="ans-key">450L</span> [cite: 367, 368]</div>
+
+    <div class="footer">Page 7 of 12 [cite: 378]</div>
+</div>
+
+<div class="page">
+    <h3>Q19. Healthy Food Survey: [cite: 381, 382]</h3>
+    <table>
+        <tr><th>Healthy Food</th><th>Count</th></tr>
+        <tr><td>Fruits</td><td>35</td></tr>
+        <tr><td>Vegetables</td><td>45</td></tr>
+    </table>
+    <div class="q-row">a) If 5 more like fruits, total? <input type="text"> <span class="ans-key">40</span> [cite: 387, 390]</div>
+    <div class="q-row">b) Most popular food? <input type="text"> <span class="ans-key">Vegetables</span> [cite: 391, 394]</div>
+
+    <h3>Q21. Car Repair Pictograph: [cite: 415]</h3>
+    <div class="q-row">(Scale: 1 icon = 5 cars) Monday has 4 icons. Cars repaired? <input type="text"> <span class="ans-key">20</span> [cite: 420, 421]</div>
+
+    <h3>Q22. Library Books: [cite: 445]</h3>
+    <div class="q-row">Math: 60, Science: 45, Hindi: 20. Which is minimum? <input type="text"> <span class="ans-key">Hindi</span> [cite: 454, 455]</div>
+
+    <h3>Q23. Football Sales: [cite: 464]</h3>
+    <div class="q-row">(Scale: 1 icon = 8 footballs) Day 1 sold 6 icons. Total? <input type="text"> <span class="ans-key">48</span> [cite: 467, 468]</div>
+
+    <div class="footer">Page 11 of 12 [cite: 498]</div>
+</div>
+
+<div class="page">
+    <h3>Q24. Observe the Calendar - March 2026: [cite: 499, 500]</h3>
     <table>
         <tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>
         <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
@@ -105,21 +165,23 @@
         <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
         <tr><td>29</td><td>30</td><td>31</td><td colspan="4"></td></tr>
     </table>
-    <div class="q">a) Which month is shown? <input type="text"> <span class="ans">March 2026</span> [cite: 502, 503]</div>
-    <div class="q">b) Last day of the month? <input type="text"> <span class="ans">Tuesday</span> [cite: 504, 506]</div>
-    <div class="q">c) Total days? <input type="text"> <span class="ans">31</span> [cite: 507, 508]</div>
-    <div class="q">d) Date on second Saturday? <input type="text"> <span class="ans">14th March</span> [cite: 512, 514]</div>
+    <div class="q-row">a) Which month/year is shown? <input type="text"> <span class="ans-key">March 2026</span> [cite: 502, 503]</div>
+    <div class="q-row">b) Date on second Saturday? <input type="text"> <span class="ans-key">14th March</span> [cite: 512, 514]</div>
+    <div class="q-row">c) Last day of the month? <input type="text"> <span class="ans-key">Tuesday</span> [cite: 504, 506]</div>
 
-    <div class="footer-pg">Page 12 of 12 [cite: 524]</div>
+    <div class="footer">Page 12 of 12 [cite: 524, 525]</div>
 </div>
 
 <script>
-    function toggleAns() {
-        let a = document.querySelectorAll('.ans');
-        let b = document.querySelector('.btn-check');
-        let h = a[0].style.display === 'none' || a[0].style.display === '';
-        a.forEach(x => x.style.display = h ? 'inline' : 'none');
-        b.innerText = h ? 'Hide Answers' : 'Check Answers';
+    function revealAnswers() {
+        var ans = document.querySelectorAll('.ans-key');
+        var btn = document.querySelector('.btn-check');
+        var isHidden = (ans[0].style.display === 'none' || ans[0].style.display === '');
+        
+        for(var i=0; i < ans.length; i++) {
+            ans[i].style.display = isHidden ? 'inline' : 'none';
+        }
+        btn.innerText = isHidden ? 'Hide Answer Key' : 'Validate My Work';
     }
 </script>
 
